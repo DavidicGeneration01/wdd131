@@ -10,7 +10,7 @@
 /* Header style */
 
 .wdd-extend {
-    background-color: #6b40ee;
+    background-color: rgb(29 77 114);
     width: 100%;
     height: 4.5rem;
 }
@@ -27,8 +27,8 @@
 }
 
 .nav-extend {
-    background-color: #f5f5ff;
-    box-shadow: 0 3px #e1e1ea;
+    background-color: #000000;
+    box-shadow: 0 3px #000000;
 
 }
 
@@ -43,7 +43,7 @@
     line-height: 39px;
     text-decoration: none;
     font-family: montserrat, lato, sans-serif;
-    color: #6b40ee;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -71,14 +71,14 @@ main .middle {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 40px;
-    background-color: #f5f5ff;
+    background-color: rgb(29 77 114);
 
 }
 
 .about-me h2 {
     font-family: kanit, lato, sans-serif;
     font-weight: 500;
-    color: #6b40ee;
+    color: #ffffff;
 }
 
 .about-grid {
@@ -99,7 +99,7 @@ main .middle {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
   
   .about-grid section,
@@ -122,7 +122,7 @@ main .middle {
     text-align: center;
     font-family: kanit, lato, sans-serif;
     font-weight: 500;
-    color: #6b40ee;
+    color: #000000;
   }
   
   .abj-grid {
@@ -174,13 +174,13 @@ main .middle {
     height: 40px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #f5f5ff;
+    background: rgb(29 77 114);
   }
   
   .web-dev-head h2 {
     font-family: kanit, lato, sans-serif;
     font-weight: 500;
-    color: #6b40ee;
+    color: #ffffff;
   }
   
   .res-list {
@@ -191,17 +191,13 @@ main .middle {
     line-height: 1.8;
   }
   
-  .foot-extend {
-    background-color: #6b40ee;
-    color: #f5f5ff;
+  .footer.foot {
     width: 100%;
-    height: 5.5rem;
-    text-align: center;
-    padding: 1rem;
-    font-family: kanit, lato, sans-serif;
-    font-weight: 400;
-    font-size: large;
-  }
+    background-color: #333; /* Or any color you prefer */
+    color: white; /* Text color */
+    text-align: center; /* Centers text horizontally */
+    padding: 20px 0; /* Adds padding to the top and bottom of the footer */
+}
   
   /* Main Style */
   
