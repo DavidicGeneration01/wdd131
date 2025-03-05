@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Header style */
+
+.wdd-extend {
+    background-color: #6b40ee;
+    width: 100%;
+    height: 4.5rem;
+}
+
+.wdd-head {
+    font-family: Kanit, lato, sans-serif;
+    font-weight: 600;
+    max-width: 1100px;
+    line-height: 4.5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #f5f5ff;
+    font-size: 1.6rem;
+}
+
+.nav-extend {
+    background-color: #f5f5ff;
+    box-shadow: 0 3px #e1e1ea;
+
+}
+
+.nav-extend .middle {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: red 1px dotted; */
+    height: 39px;
+}
+
+.nav-extend .middle a {
+    line-height: 39px;
+    text-decoration: none;
+    font-family: montserrat, lato, sans-serif;
+    color: #6b40ee;
+    font-weight: 500;
+}
+
+.nav-extend .middle a:hover {
+    text-decoration: underline #6b40ee 2.5px;
+}
+
+main .middle {
+    display: grid;
+    grid: auto/ 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.section1 {
+    grid-column: 1/3;
+    border: #f5f5ff 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+
+}
+
+.about-me {
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40px;
+    background-color: #f5f5ff;
+
+}
+
+.about-me h2 {
+    font-family: kanit, lato, sans-serif;
+    font-weight: 500;
+    color: #6b40ee;
+}
+
+.about-grid {
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+    /* border: red 1px dotted; */
+  }
+  
+  .about-grid section {
+    grid-column: 1/3;
+  }
+  
+  .about-grid section p {
+    line-height: 1.8;
+  }
+  
+  .my-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-grid section,
+  .my-photo {
+    padding: 15px 15px;
+    font-family: montserrat, lato, sans-serif;
+    font-weight: 400;
+  }
+  
+  .abj-grid span,
+  .abj-grid p {
+    padding: 15px 15px;
+  }
+  
+  .abj-grid p {
+    line-height: 1.8;
+  }
+  
+  .abj-head {
+    text-align: center;
+    font-family: kanit, lato, sans-serif;
+    font-weight: 500;
+    color: #6b40ee;
+  }
+  
+  .abj-grid {
+    display: grid;
+    grid: auto / 0.5fr 1fr;
+    margin: 18px auto;
+  }
+  
+  .abj-grid span p {
+    font-family: montserrat, lato, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+  }
+  
+  .abj-grid p {
+    font-family: montserrat, lato, sans-serif;
+    font-weight: 400;
+  }
+  
+  .abj-parent {
+    margin: 20px auto;
+  }
+  
+  #underline-abj {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-color: #f5f5ff;
+  }
+  
+  .nig-flag {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+  }
+  
+  .section2 {
+    border: #f5f5ff 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea ;
+  
+  }
+  
+  .web-dev-head {
+    background-color: aqua;
+    text-align: center;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #f5f5ff;
+  }
+  
+  .web-dev-head h2 {
+    font-family: kanit, lato, sans-serif;
+    font-weight: 500;
+    color: #6b40ee;
+  }
+  
+  .res-list {
+    padding: 50% 4%;
+    margin-left: 20px;
+    font-family: montserrat, lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+  
+  .foot-extend {
+    background-color: #6b40ee;
+    color: #f5f5ff;
+    width: 100%;
+    height: 5.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: kanit, lato, sans-serif;
+    font-weight: 400;
+    font-size: large;
+  }
+  
+  /* Main Style */
+  
+  /* Footer Style */
