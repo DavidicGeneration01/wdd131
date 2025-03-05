@@ -51,6 +51,12 @@
     text-decoration: underline #6b40ee 2.5px;
 }
 
+main {
+  justify-self: center;
+  align-self: center;
+  max-width: 1200px;
+}
+
 main .middle {
     display: grid;
     grid: auto/ 1fr 1fr 1fr;
@@ -98,7 +104,7 @@ main .middle {
   .my-photo {
     width: 240px;
     height: 240px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* object-fit: cover; */
   }
   
@@ -159,6 +165,8 @@ main .middle {
     display: block;
     margin: 0 auto;
     width: 190px;
+    padding-top: 25px;
+
   }
   
   .section2 {
@@ -184,19 +192,35 @@ main .middle {
   }
   
   .res-list {
-    padding: 50% 4%;
+    padding: 50% 12%;
     margin-left: 20px;
     font-family: montserrat, lato, sans-serif;
     font-weight: 400;
     line-height: 1.8;
   }
+
+  li {
+    padding: 5px;
+  }
   
-  .footer.foot {
+  footer  {
     width: 100%;
-    background-color: #333; /* Or any color you prefer */
-    color: white; /* Text color */
-    text-align: center; /* Centers text horizontally */
-    padding: 20px 0; /* Adds padding to the top and bottom of the footer */
+    background-color: rgb(29 77 114); 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+footer p span {
+  font-size: x-large;
+}
+
+footer .id{
+  color: yellow;
+}
+
+.footer-content {
+  margin: 0 auto;
 }
   
   /* Main Style */
