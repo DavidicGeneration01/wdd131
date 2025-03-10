@@ -1,0 +1,62 @@
+@media screen and (min-width: 1024px) {
+
+    header {
+        height: 80px;
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid: auto / 1fr 40%;
+    }
+    
+    main { 
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+    #menu {
+        display: none;
+    }
+
+    .right-nav {
+        display: block;
+    }
+
+
+    .right-nav a {
+        display: inline;    
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+    
+    .left-nav {
+        padding-top: 10px;
+        font-size: 2.3rem;
+    }
+
+    .pic-grid {
+        display: grid;
+        grid: 1fr / 1fr 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .right-nav a:hover {
+        transition: .5s ease;
+    }
+
+    .foot-nav {
+        font-size: .9rem;   
+    }
+
+    .foot-nav p {
+        line-height: 23px;
+    }
+}

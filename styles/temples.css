@@ -10,13 +10,13 @@ body {
     font-family: montserrat, lato, sans-serif;
 }
 
-/*
-************************
-Mobile View
-************************
-*/
+/* 
+********************
+MOBILE VIEW
+********************
+  */
 
-/* Nav Element */
+/* NAV ELEMENTs */
 
 header {
     background-color: #0d2310;
@@ -30,9 +30,120 @@ header {
     gap: 18px;
 }
 
-/* hamburger button styling */
-#menu {
+/*hamburger button styling*/
+#menu {  
     display: inline;
     font-size: 2rem;
     font-weight: 400;
+    text-decoration: none;
+    padding: .4rem .75rem;
+    color: #fff;
+    float: right;
+    margin-right: 10px;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.active::before {
+    content: '✖';
+}
+
+/* show hamburger */
+.right-nav.active {
+    background-color: #0d2310;
+    height: 35vh;
+    width: 75%;
+    margin-top: 60px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    z-index: 1;
+    transition: .5s ease;
+}
+
+/* display nav items inside
+hamburger*/
+.right-nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.right-nav.active {
+    right:0;
+}
+
+.right-nav a:hover {
+    color: #acfbb7;;
+    cursor: pointer;
+}
+
+.left-nav {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: kanit, lato, sans-serif;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+
+/* MAIN ELEMENTS   */
+
+.home {
+    padding: 15px;
+    text-align: center;
+    color: #0d2310;
+    font-size: 1.2rem;
+}
+
+.pic-grid {
+    display: grid;
+    grid: auto / 1fr;
+    margin: 0 auto;
+}
+
+.pic {
+    padding: 16px;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.pic img {
+    width: 250px;
+    height: 156px;
+    /* filter: grayscale(97%); */
+}
+
+.pic figure figcaption {
+    color: #0d2310;
+    font-size: .85em;
+}
+
+
+
+
+
+/* FOOTER ELEMENTS */
+
+footer {
+    background-color: #0d2310;
+    text-align: center;
+    height: 80px;
+    line-height: 16px;
+    width: 100%;
+}
+
+.foot-nav {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: .7em;
+    color: white;
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David O. Alade">
+    <meta name="description"
+        content="a brief insiight about Abuja such as its weather conditions and notable information about the city.">
+    <title>About Abuja</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header class="abj">
+        <h1>Abuja</h1>
+    </header>
+
+    <div class="space-top"></div>
+
+    <main>
+        <picture class="abj-pic">
+            <source srcset="images/abuja-city-gate-large.webp" media="(min-width: 1300px)">
+            <source srcset="images/abuja-city-gate-medium.webp" media="(min-width: 800px)">
+            <source srcset="images/abuja-city-gate-small.webp" media="(min-width: 600px)">
+            <img src="images/abuja-city-gate-vertical.webp" alt="Abuja City Gate" width="300" height="336">
+        </picture>
+
+        <div class="space-between"></div>
+
+        <div class="tab1">
+            <h2 class="data" title="Abuja">Data</h2>
+
+            <ul class="key" style="list-style: none; padding-left: 0">
+                <li><strong>Area:</strong></li>
+                <li><strong>Population:</strong></li>
+                <li><strong>Country:</strong></li>
+                <li><strong>Languages:</strong></li>
+                <li><strong>Currency:</strong></li>
+                <li><strong>Time Zone:</strong></li>
+                <li><strong>Calling Code:</strong></li>
+                <li><strong>Internet TLD:</strong></li>
+            </ul>
+
+            <ul class="value" style="list-style: none; padding-left: 0">
+                <li>1,769sq km</li>
+                <li>4,025,735</li>
+                <li>Nigeria</li>
+                <li>English</li>
+                <li>Naira</li>
+                <li>UTC+1</li>
+                <li>+234</li>
+                <li>.ng</li>
+            </ul>
+        </div>
+
+        <hr style="border-color: rgb(238, 255, 213)" />
+
+
+
+        <div class="tab2">
+            <!-- Weather Icon -->
+
+            <div class="weather-icon">
+
+                <div class="weatherIcon">
+                    <h2 class="weather">Weather</h2>
+                    <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Sunshine" style="width: 60px; height: 60px;">
+                </div>
+
+            </div>
+            <!-- Weather Icon Ended -->
+
+            <ul class="key" style="list-style: none; padding-left: 0">
+                <li><strong>Temperature:</strong></li>
+                <li><strong>Conditions:</strong></li>
+                <li><strong>Wind:</strong></li>
+                <li><strong>Wind Chill:</strong></li>
+            </ul>
+
+            <ul class="value-li" style="list-style: none; padding-left: 0">
+                <li>31<sup>o</sup>C</li>
+                <li>Mostly sunny</li>
+                <li>5km/h</li>
+                <li id="windChill"><sup>o</sup>C</li>
+            </ul>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="foot-nav">
+            <p>&copy; <span id="currentyear"></span> 🌺 David O. Alade 🌺 Nigeria</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
