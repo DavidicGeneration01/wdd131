@@ -83,8 +83,10 @@ main .middle {
 
 .about-me h2 {
     font-family: kanit, lato, sans-serif;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: bolder;
+    color: #000000;
+    padding-top: 5px;
+    
 }
 
 .about-grid {
@@ -187,8 +189,10 @@ main .middle {
   
   .web-dev-head h2 {
     font-family: kanit, lato, sans-serif;
-    font-weight: 500;
-    color: #ffffff;
+    padding-top: 5px;
+    font-weight: bolder;
+    color: #000000;
+
   }
   
   .res-list {
