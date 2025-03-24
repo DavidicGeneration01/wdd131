@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, lato, sans-serif;
+}
+
+/* 
+********************
+MOBILE VIEW
+********************
+  */
+
+/* NAV ELEMENTs */
+
+header {
+    background-color: #0d2310;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+/*hamburger button styling*/
+#menu {  
+    display: inline;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: .4rem .75rem;
+    color: #fff;
+    float: right;
+    margin-right: 10px;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.active::before {
+    content: '✖';
+}
+
+/* show hamburger */
+.right-nav.active {
+    background-color: #0d2310;
+    height: 35vh;
+    width: 75%;
+    margin-top: 60px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    z-index: 1;
+    transition: .5s ease;
+}
+
+/* display nav items inside
+hamburger*/
+.right-nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.right-nav.active {
+    right:0;
+}
+
+.right-nav a:hover {
+    color: #acfbb7;;
+    cursor: pointer;
+}
+
+.left-nav {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: kanit, lato, sans-serif;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+
+/* MAIN ELEMENTS   */
+
+.home {
+    padding: 15px;
+    text-align: center;
+    color: #0d2310;
+    font-size: 1.2rem;
+}
+
+.pic-grid {
+    display: grid;
+    grid: auto / 1fr;
+    margin: 0 auto;
+}
+
+.pic {
+    padding: 16px;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.pic img {
+    width: 250px;
+    height: 156px;
+    /* filter: grayscale(97%); */
+}
+
+.pic figure figcaption {
+    color: #0d2310;
+    font-size: .85em;
+}
+
+
+
+
+
+/* FOOTER ELEMENTS */
+
+footer {
+    background-color: #0d2310;
+    text-align: center;
+    height: 80px;
+    line-height: 16px;
+    width: 100%;
+}
+
+.foot-nav {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: .7em;
+    color: white;
+}
