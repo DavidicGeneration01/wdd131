@@ -56,7 +56,7 @@ header {
 .right-nav.active {
     background-color: #0d2310;
     height: 30vh;
-    width: 40%;
+    width: 75%;
     margin-top: 60px;
     position: fixed;
     top: 0;
