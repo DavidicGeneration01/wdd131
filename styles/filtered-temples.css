@@ -29,7 +29,9 @@ header {
 .nav-holder {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 18px;
+    padding: 0 15px;
 }
 
 /*hamburger button styling*/
@@ -38,10 +40,8 @@ header {
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
-    padding: .4rem .75rem;
     color: #fff;
     float: right;
-    margin-right: 10px;
 }
 
 #menu::before {
@@ -65,8 +65,7 @@ header {
     transition: .5s ease;
 }
 
-/* display nav items inside
-hamburger*/
+/* display nav items inside hamburger*/
 .right-nav a {
     display: block;
     padding: 0.75rem;
@@ -93,7 +92,7 @@ hamburger*/
     font-weight: 400;
     font-family: kanit, lato, sans-serif;
     line-height: 60px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     font-size: 1.5em;
 }
 
@@ -119,20 +118,18 @@ hamburger*/
 
 section {
     width: 350px;
-    height: 250px;
-    padding-bottom: 340px;
+    height: 350px;
     position: relative;
     line-height: 1.5;
     background-color: rgb(241, 241, 241);
     box-shadow: 2px 2px 5px #e1e1ea, -2px -0px 5px  #e1e1ea;
     margin: 0 auto;
-    margin-bottom: 50px ;
+    margin-bottom: 40px ;
 }
 
 .pic-grid img {
-    width: 100%;
+    width: 350px;
     height: 209px;
-    /* filter: grayscale(97%); */
     position: absolute;
     bottom: 0;
 }
