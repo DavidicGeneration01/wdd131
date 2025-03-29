@@ -55,7 +55,7 @@ header {
 /* show hamburger */
 .right-nav.active {
     background-color: #0d2310;
-    height: 100vh;
+    height: 30vh;
     width: 75%;
     margin-top: 60px;
     position: fixed;
