@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     font-family: raleway, cabin, sans-serif;
     font-size: 15px;
 }
@@ -32,6 +32,10 @@ header h1 {
     color: white;
     padding: 16px;
     text-align: center;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 7px 7px 0 0;
 
 }
 
@@ -40,22 +44,22 @@ header h1 {
 
 
 main {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
 
 }
 
 
 label {
     font-weight: 600;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 input,
 textarea,
 select {
-    border: 1px solid rgba(59, 52, 66, 0.2);
-    background-color: var(--input-color);
-    color: white;
+    border: 1px solid rgba(149, 138, 138, 0.333);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 input:hover,
@@ -70,7 +74,7 @@ select:hover {
 /* -----------------MAIN-----------------  */
 
 #form-container {
-    background-color: var(--form-background-color);
+    background-color: #d5cddc;
     padding: 15px;
 }
 
@@ -144,7 +148,7 @@ option {
     margin-top: 4px;
     padding: 8px;
     font-family: raleway, cabin, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -202,7 +206,7 @@ option {
 }
 
 span {
-    color: #d8b1ff;
+    color: #0001ae;
 }
 
 
@@ -213,16 +217,16 @@ span {
 }
 
 #button {
-    background-color: var(--button-color);
+    background-color: #4d4b4b55;
 }
 
 #button:hover {
-    background-color: #5f437b;
+    background-color: rgb(52, 3, 52);
 }
 
 .button-cont input {
     height: 39px;
-    width: 140px;
+    width: 100%;
     border-radius: 4px;
     text-align: center;
     font-family: raleway, cabin, sans-serif;
@@ -284,7 +288,9 @@ footer {
     text-align: center;
     height: 80px;
     width: 100%;
-    margin-top: 50px;
+    max-width: 420px; 
+    margin: 50px auto 0;
+    border-radius: 0 0 7px 7px;
 }
 
 .foot-nav {
