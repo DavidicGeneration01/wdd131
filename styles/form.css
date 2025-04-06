@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-    background-color: var(--form-background-color);
+    background-color: #220540;
     color: white;
     padding: 16px;
     text-align: center;
@@ -284,7 +284,7 @@ span {
 /* -----------------FOOTER-----------------  */
 
 footer {
-    background-color: var(--form-background-color);
+    background-color: #220540;
     text-align: center;
     height: 80px;
     width: 100%;
