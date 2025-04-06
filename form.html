@@ -1,132 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="David O. Alade">
-    <meta name="description" content="designing a form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="David O. Alade" />
+    <meta name="description" content="designing a form" />
     <title>Product Review</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/form.css" media="screen">
+    <link rel="stylesheet" href="styles/form.css" media="screen" />
     <script src="scripts/form.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>Product Review</h1>
+      <h1>Product Review</h1>
     </header>
 
     <main>
-        <form method="get" action="review.html" id="form-container">
-        
-            <div class="pro-name">
-                <label>
-                    Product Name
-                    <select id="productName" name="ProdName" required>
-                        <option disabled selected value="">Select a Product</option>
-                        <!-- add more through javascript  -->
-                    </select>
-                </label>
+      <form method="get" action="review.html" id="form-container">
+        <div class="pro-name">
+          <label>
+            Product Name
+            <select id="productName" name="ProdName" required>
+              <option disabled selected value="">Select a Product</option>
+              <!-- add more through javascript  -->
+            </select>
+          </label>
+        </div>
+
+        <div class="star-container">
+          <label class="O-rating">Overall Rating</label>
+
+          <div class="starS-cont">
+            <div class="starSymbol">
+              <label>
+                ⭐
+                <input type="radio" name="radioB" id="oneStar" required />
+              </label>
             </div>
 
-            <div class="star-container">
-                <label class="O-rating">Overall Rating</label>
-
-                <div class="starS-cont">
-                
-                    <div class="starSymbol">
-                        <label> ⭐ 
-                            <input type="radio" name="radioB" id="oneStar" required> 
-                        </label>
-                    </div>
-
-                    <div class="starSymbol">
-                        <label> ⭐⭐<input type="radio" name="radioB" id="twoStar" required> </label>
-                    </div>
-
-                    <div class="starSymbol">
-                        <label> ⭐⭐⭐ <input type="radio" name="radioB" id="threeStar" required> </label>
-                    </div>
-
-                    <div class="starSymbol">
-                        <label> ⭐⭐⭐⭐ <input type="radio" name="radioB" id="fourStar" required> </label>
-                    </div>
-
-                    <div class="starSymbol">
-                        <label>⭐⭐⭐⭐⭐<input type="radio" name="radioB" id="fiveStar" required> </label>
-                    </div>
-
-                </div>
-              
+            <div class="starSymbol">
+              <label>
+                ⭐⭐<input type="radio" name="radioB" id="twoStar" required />
+              </label>
             </div>
 
-            <div class="date-install">
-                <label>Date of Installation 
-                    <input type="date" name="dateSelection" id="Date" required> 
-                </label>
+            <div class="starSymbol">
+              <label>
+                ⭐⭐⭐
+                <input type="radio" name="radioB" id="threeStar" required />
+              </label>
             </div>
 
-
-            <div class="feature">
-                <div>
-                    <label>Which features did you find useful in the product?<br>
-                    <i>(check all that apply)</i>
-                    </label>
-                </div>
-
-                <label>
-                <input type="checkbox" name="checkbox" id="checkbox1" value="Durability"> Durability
-                </label>
-
-                <label>
-                    <input type="checkbox" name="checkbox" id="checkbox2" value="Ease of Use"> Ease of Use
-                </label>
-
-                <label>
-                    <input type="checkbox" name="checkbox" id="checkbox3" value="Performance"> Performance
-                </label>
-
-                <label>
-                    <input type="checkbox" name="checkbox" id="checkbox4" value="Design"> Design
-                </label>
-                <!-- </label> -->
+            <div class="starSymbol">
+              <label>
+                ⭐⭐⭐⭐
+                <input type="radio" name="radioB" id="fourStar" required />
+              </label>
             </div>
 
-
-            <div class="review">
-                <label>Written Review <span>(Optional)</span>
-                    <textarea name="review" id="constReview"></textarea>
-                </label>
+            <div class="starSymbol">
+              <label
+                >⭐⭐⭐⭐⭐<input
+                  type="radio"
+                  name="radioB"
+                  id="fiveStar"
+                  required
+                />
+              </label>
             </div>
+          </div>
+        </div>
 
+        <div class="date-install">
+          <label
+            >Date of Installation
+            <input type="date" name="dateSelection" id="Date" required />
+          </label>
+        </div>
 
-            <div class="yourName">
-                <label>Your Name <span>(Optional)</span>
-                    <input type="text" name="customerName" id="custName">
-                </label>
-            </div>
+        <div class="feature">
+          <div>
+            <label
+              >Which features did you find useful in the product?<br />
+              <i>(check all that apply)</i>
+            </label>
+          </div>
 
-            <div class="button-cont">
-                <input type="submit" name="submit" id="button" value="Post Review">
-            </div>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox1"
+              value="Durability"
+            />
+            Durability
+          </label>
 
-        </form>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox2"
+              value="Ease of Use"
+            />
+            Ease of Use
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox3"
+              value="Performance"
+            />
+            Performance
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox4"
+              value="Design"
+            />
+            Design
+          </label>
+          <!-- </label> -->
+        </div>
+
+        <div class="review">
+          <label
+            >Written Review <span>(Optional)</span>
+            <textarea name="review" id="constReview"></textarea>
+          </label>
+        </div>
+
+        <div class="yourName">
+          <label
+            >Your Name <span>(Optional)</span>
+            <input type="text" name="customerName" id="custName" />
+          </label>
+        </div>
+
+        <div class="button-cont">
+          <input type="submit" name="submit" id="button" value="Post Review" />
+        </div>
+      </form>
     </main>
 
     <footer>
-        <div class="foot-nav">
-            <p>&copy; <span id="currentyear"></span> 🌺 David O. Alade 🌺 Nigeria</p>
-            <p id="lastmodified"></p>
-        </div>
+      <div class="foot-nav">
+        <p>
+          &copy; <span id="currentyear"></span> 🌺 David O. Alade 🌺 Nigeria
+        </p>
+        <p id="lastmodified"></p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
