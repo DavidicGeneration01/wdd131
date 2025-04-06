@@ -264,3 +264,206 @@ header {
     margin: 5px 0; 
   }
 }
+
+.articles-section {
+  padding: 20px;
+}
+
+.articles-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.articles-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  border: none; 
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.article-card:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.article-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.article-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+  
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.info {
+  background-color: #f8f8f8;
+  
+}
+
+.garden {
+  margin-top: 80px;
+  width: 50px; 
+  height: auto; 
+}
+
+.text {
+  margin-top: 80px;
+  font-family: Arial, sans-serif; 
+  font-size: 2rem; 
+  font-weight: bolder;
+  color: #000000; 
+}
+
+.newsletter-section {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+
+.newsletter-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: rgb(54, 51, 51);
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px; /* Adjust width as needed */
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #45a049; /* Hover effect */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+}
+
+.language-selection select {
+  padding: 5px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-media-icons a {
+  margin: 0 5px;
+}
+
+.social-media-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #666;
+}
+footer p span {
+  font-size: x-large;
+}
+
+footer .id{
+  color: rgb(255, 0, 0);
+}
