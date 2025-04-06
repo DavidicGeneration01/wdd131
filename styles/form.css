@@ -1,0 +1,322 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #271F2E;
+    --form-background-color: #3B3442;
+    --input-color: #5F5667;
+    --button-color: #571995;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: raleway, cabin, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* -----------------HEADER-----------------  */
+
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    background-color: var(--form-background-color);
+    color: white;
+    padding: 16px;
+    text-align: center;
+
+}
+
+/* -----------------HEADER END-----------------  */
+
+
+
+main {
+    background-color: var(--background-color);
+
+}
+
+
+label {
+    font-weight: 600;
+    color: white;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid rgba(59, 52, 66, 0.2);
+    background-color: var(--input-color);
+    color: white;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    background-color: #504857;
+    transition: .3s ease;
+}
+
+
+
+/* -----------------MAIN-----------------  */
+
+#form-container {
+    background-color: var(--form-background-color);
+    padding: 15px;
+}
+
+.pro-name {
+    padding: 13px 0;
+}
+
+#productName {
+    display: block;
+    height: 37px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+option {
+    color: white;
+    font-family: raleway, cabin, sans-serif;
+}
+
+
+
+
+
+.star-container {
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.starS-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 15px;
+}
+
+.starS-cont label {
+    font-size: 12px;
+}
+
+.starS-cont input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+}
+
+
+.starSymbol input {
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+.date-install {
+    padding: 20px 0;
+}
+
+
+#Date {
+    display: block;
+    height: 37px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 8px;
+    font-family: raleway, cabin, sans-serif;
+    color: white;
+}
+
+
+
+
+
+.feature {
+    margin: 20px 0;
+}
+
+.feature input {
+    margin: 6px 0;
+    width: 15px;
+    height: 15px;
+}
+
+
+.feature label {
+    display: block;
+}
+
+
+
+
+
+.review {
+    margin-top: 35px;
+    max-width: 100%;
+}
+
+.review textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 4px;
+    border-radius: 4px;
+    padding: 7px 0 0 7px;
+    font-family: raleway, cabin, sans-serif;
+}
+
+
+
+
+.yourName {
+    margin-top: 30px;
+}
+
+.yourName input {
+    display: block;
+    margin-top: 3px;
+    width: 100%;
+    height: 37px;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-family: raleway, cabin, sans-serif;
+}
+
+span {
+    color: #d8b1ff;
+}
+
+
+
+.button-cont {
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+#button {
+    background-color: var(--button-color);
+}
+
+#button:hover {
+    background-color: #5f437b;
+}
+
+.button-cont input {
+    height: 39px;
+    width: 140px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: raleway, cabin, sans-serif;
+    font-weight: 600;
+}
+
+
+/* -----------------MAIN END-----------------  */
+
+
+
+
+
+/* -----------------REVIEW PAGE-----------------  */
+
+.review-page {
+    text-align: center;
+    color: white;
+}
+
+.review-page div {
+    margin-bottom: 20px;
+}
+
+.review-page div h2 {
+    font-size: 18px;
+}
+
+.review-page a {
+    color: white;
+    font-family: raleway, cabin, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.review-page button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #571995;
+    border: none;
+}
+
+.review-page button:hover {
+    background-color: #5f437b;
+
+}
+
+/* -----------------REVIEW PAGE END-----------------  */
+
+
+
+
+
+
+/* -----------------FOOTER-----------------  */
+
+footer {
+    background-color: var(--form-background-color);
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.foot-nav {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: .9rem;
+    color: white;
+}
+
+.foot-nav span {
+    color: white;
+}
+
+.foot-nav p {
+    padding: 2px 0;
+}
+
+/* -----------------FOOTER END-----------------  */
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+    #form-container {
+        max-width: 420px;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+
+}
