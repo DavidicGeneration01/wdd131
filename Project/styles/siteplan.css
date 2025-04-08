@@ -7,9 +7,24 @@
 
 :root {
   --background-color: #f4f4f4; /* Light background color */
+  --background-color: #f8f8f8; /* footer background color for sections */
+  --background-color: #e8e8e8; /* footer, copyright background color */
+  --background-color: #f4f4f4; /* card background color */
   --text-color: #333; /* Dark text color */
+  --text-color: #fff; /* Light text color */
   --primary-color: rgb(34, 139, 34); /* Green color for links and buttons */
   --hover-color: rgb(0, 128, 0); /* Darker green for hover effects */
+
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-primary);
+}
+
+.header {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-secondary);
 }
 
 /* General styles for header */
@@ -294,7 +309,7 @@ header {
   text-align: center;
   max-width: 200px;
   border: none;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -320,7 +335,7 @@ header {
 .article-card p {
   margin: 5px 0;
   font-size: 0.9rem;
-  color: #555;
+  color: ##333;
 }
 
 .text-italic {
@@ -460,7 +475,7 @@ header {
 
 .copyright {
   font-size: 14px;
-  color: #666;
+  color: #333;
 }
 footer p span {
   font-size: x-large;
@@ -558,6 +573,6 @@ footer .id {
 .wiref-sec img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #ccc;
+  border: 2px solid #f4f4f4;
   border-radius: 10px;
 }
