@@ -1,3 +1,12 @@
+    // Hamburger menu logic
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+    
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Smooth Scrolling for internal links ---
@@ -45,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Example: openLightbox(img.src, img.alt);
         });
     });
+    
 
     // --- Mobile Navigation Toggle (Example Structure) ---
     /*
