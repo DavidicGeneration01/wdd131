@@ -26,6 +26,7 @@ body {
     background-color: var(--white-color); /* Or a light natural background */
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headings);
     margin-bottom: 0.8em;
@@ -111,54 +112,119 @@ section {
 }
 
 /* ================== HEADER & FOOTER (Placeholder - Style as per site design) ================== */
-.site-header {
-    background-color: var(--white-color);
-    padding: 15px 0;
-    border-bottom: 1px solid var(--light-color);
-    position: sticky; /* Optional: make header sticky */
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
-.header-content {
+.header {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-secondary);
+  }
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+  }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
+  display: flex;
+  align-items: center;
 }
 
-.main-nav ul {
-    list-style: none;
-    display: flex;
+.logo img {
+  max-width: 40px;
+  margin-right: 10px;
 }
 
-.main-nav li {
-    margin-left: 20px;
+.span-text {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.main-nav a {
-    color: var(--dark-color);
-    font-weight: bold;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
+.navbar {
+  position: relative;
 }
 
-.main-nav a.active,
-.main-nav a:hover {
-    color: var(--primary-color);
-    border-bottom-color: var(--primary-color);
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-.header-cta {
-    padding: 8px 15px;
-    font-size: 0.9rem;
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
+
+.nav-links a:hover {
+  color: rgb(34, 139, 34);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(34, 139, 34);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 150%;
+      right: -50px;
+      background-color: #f4f4f4;
+      width: 200px;
+      padding: 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s ease, padding 0.5s ease;
+    }
+  
+    .nav-links.active {
+      transform: scaleY(1);
+      padding: 10px;
+    }
+  
+    .nav-links li {
+      margin: 5px 0;
+    }
+  }
 
 
 .site-footer {
