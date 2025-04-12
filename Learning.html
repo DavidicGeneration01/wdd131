@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David O. Alade">
+    <meta name="description" content="GardenPro, Helping users create the perfect garden sanctuary">
+    <meta name="Purpose" content="Provide gardening tips, event information, and articles to help users improve their gardening skills" />
+    <title>Garden Trip</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/Garden-Trip.css">
+    <script src="scripts/Garden-Trip.js"></script>
+   
+
+</head>
+<body>
+
+    <!-- ================== HEADER (Assume consistent site header) ================== -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="GardenPro Logo" />
+        <span class="span-text">GardenPro</span>
+      </div>
+    
+      <nav class="navbar">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="Garden-Trip.html">Home</a></li>
+          <li><a href="Contact-html">Contact Us</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================== MAIN CONTENT AREA ================== -->
+    <main>
+
+        <!-- ================== Hero Section ================== -->
+        <section class="hero garden-hero">
+            <div class="hero-content container">
+
+                <h1>Experience the Bloom: Your Farm Garden Adventure</h1>
+                <p>Escape the everyday and immerse yourself in the sights, scents, and tastes of our working farm garden. Discover hands-on activities, fresh flavors, and create lasting memories.</p>
+                <a href="#activities-overview" class="button button-primary scroll-to">Explore Activities Below</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- ================== Seasonal Highlights (Optional) ================== -->
+        <section class="seasonal-highlights">
+            <div class="container">
+                <h2>Fresh This Season</h2>
+                <p>Juicy strawberries are ripe for picking! <a href="#pyo">Join our Pick-Your-Own</a> or check out our <a href="#workshops">Summer Harvest Workshop</a>. Sunflowers are in full bloom!</p>
+            </div>
+        </section>
+
+        <!-- ================== Activities Overview ================== -->
+        <section id="activities-overview" class="activities-overview">
+            <div class="container">
+                <h2>What You Can Do</h2>
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <img src="images/compost-heap.jpg" alt="Pick Your Own Icon" class="activity-icon"> <!-- Replace with actual icon/image -->
+                        <h3>Pick-Your-Own Fun</h3>
+                        <p>Harvest the freshest berries, veggies, or flowers straight from the plant.</p>
+                        <a href="#pyo" class="button button-secondary scroll-to">Learn More</a>
+                    </div>
+                    <div class="activity-card">
+                        <img src="images/farm-guide.jpg" alt="Farm Tour Icon" class="activity-icon">
+                        <h3>Guided Farm Tours</h3>
+                        <p>Explore the garden, learn about our sustainable practices, and meet the plants.</p>
+                        <a href="#tours" class="button button-secondary scroll-to">See Details</a>
+                    </div>
+                    <div class="activity-card">
+                        <img src="images/workshop.jpg" alt="Workshop Icon" class="activity-icon">
+                        <h3>Hands-On Workshops</h3>
+                        <p>Get your hands dirty with workshops on gardening, preserving, and more.</p>
+                        <a href="#workshops" class="button button-secondary scroll-to">View Schedule</a>
+                    </div>
+                    <div class="activity-card">
+                        <img src="images/garden-cafe.jpg" alt="Cafe Icon" class="activity-icon">
+                        <h3>Garden Cafe & Tastings</h3>
+                        <p>Relax and savor delicious treats made with ingredients fresh from our farm.</p>
+                        <a href="#cafe" class="button button-secondary scroll-to">Taste Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== Detailed Activity Sections ================== -->
+        <section id="activity-details" class="activity-details">
+            <div class="container">
+                <h2>Explore Our Activities</h2>
+
+                <article class="activity-item" id="pyo">
+                    <div class="activity-image">
+                        <img src="images/harvest.jpg" alt="People picking strawberries in a field">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Pick-Your-Own Berries & Veggies</h3>
+                        <p>Experience the joy of harvesting your own food! Wander through our designated PYO fields and fill your basket with the season's best. Perfect for families and food lovers.</p>
+                        <h4>Details:</h4>
+                        <ul>
+                            <li><strong>Season:</strong> Strawberries (June-July), Tomatoes (Aug-Sept), Pumpkins (Oct) - *Check current availability!*</li>
+                            <li><strong>Duration:</strong> As long as you like during PYO hours!</li>
+                            <li><strong>Pricing:</strong> Pay by the pound/container. See current rates on arrival.</li>
+                            <li><strong>Suitability:</strong> All ages, family-friendly.</li>
+                            <li><strong>What's Included:</strong> Guidance on picking areas. Containers available for purchase or bring your own (check policy).</li>
+                        </ul>
+                        <p><strong>Related Products:</strong> Find pre-picked berries, homemade jams, and fresh pies at our Farm Stand!</p>
+                        <a href="#booking" class="button button-primary scroll-to">Check PYO Availability</a>
+                    </div>
+                </article>
+
+                <article class="activity-item reverse" id="tours">
+                     <div class="activity-image">
+                        <img src="images/people.jpg" alt="Guide talking to group in a garden">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Guided Farm & Garden Tours</h3>
+                        <p>Join one of our knowledgeable guides for an insightful walk around the farm. Learn about our history, sustainable growing methods, crop rotation, and what's currently thriving in the garden.</p>
+                         <h4>Details:</h4>
+                        <ul>
+                            <li><strong>Season:</strong> Spring through Fall (Check schedule).</li>
+                            <li><strong>Duration:</strong> Approx. 60 minutes.</li>
+                            <li><strong>Pricing:</strong> $15 per adult, $8 per child (under 5 free). Booking recommended.</li>
+                            <li><strong>Suitability:</strong> Curious minds, ages 6+.</li>
+                            <li><strong>What's Included:</strong> Guided walk, Q&A session.</li>
+                        </ul>
+                        <p><strong>Related Products:</strong> Grab a farm map or guide book from our shop.</p>
+                        <a href="#booking" class="button button-primary scroll-to">Book Your Tour Slot</a>
+                    </div>
+                </article>
+
+                <article class="activity-item" id="workshops">
+                     <div class="activity-image">
+                        <img src="images/arrange.jpg" alt="Hands arranging flowers in a workshop">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Hands-On Workshops</h3>
+                        <p>Deepen your connection with nature and learn new skills! We offer a variety of seasonal workshops, from beginner gardening and composting to jam making and flower arranging.</p>
+                         <h4>Details:</h4>
+                        <ul>
+                            <li><strong>Season:</strong> Offered year-round (indoors/outdoors depending on topic). Check schedule for specific dates.</li>
+                            <li><strong>Duration:</strong> Typically 1.5 - 3 hours.</li>
+                            <li><strong>Pricing:</strong> Varies by workshop ($35 - $75+). Includes materials unless noted. Pre-booking essential.</li>
+                            <li><strong>Suitability:</strong> Adults & older teens (check specific workshop age recommendations).</li>
+                            <li><strong>What's Included:</strong> Expert instruction, all necessary materials, take-home creation/knowledge!</li>
+                        </ul>
+                         <p><strong>Related Products:</strong> Find seeds, tools, and kits related to our workshops in the Farm Shop.</p>
+                        <a href="#" class="button button-primary">View Workshop Calendar</a> <!-- Link to separate calendar page or booking system -->
+                    </div>
+                </article>
+
+                 <article class="activity-item reverse" id="cafe">
+                     <div class="activity-image">
+                        <img src="images/cofee.jpg" alt="Slice of pie and coffee on a rustic table">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Garden Cafe & Tastings</h3>
+                        <p>Take a break and refuel at our cozy Garden Cafe. Enjoy freshly brewed coffee, herbal teas, light lunches, seasonal baked goods, and special tasting platters featuring our farm's bounty.</p>
+                         <h4>Details:</h4>
+                        <ul>
+                            <li><strong>Season:</strong> Open daily during main season (May-Oct), weekends off-season. Check hours.</li>
+                            <li><strong>Duration:</strong> Relax as long as you wish!</li>
+                            <li><strong>Pricing:</strong> Menu prices vary. Tasting platters available seasonally.</li>
+                            <li><strong>Suitability:</strong> Everyone! Indoor and outdoor seating available.</li>
+                            <li><strong>What's Included:</strong> Delicious food & drinks in a relaxing atmosphere.</li>
+                        </ul>
+                         <p><strong>Related Products:</strong> Purchase our jams, honey, baked mixes, and teas to enjoy at home.</p>
+                        <a href="menu.html" class="button button-primary">View Cafe Menu</a> <!-- Optional link to a menu page -->
+                    </div>
+                </article>
+
+                <!-- Add more activity articles as needed (Kids Corner, Special Events etc.) -->
+
+            </div>
+        </section>
+
+        <!-- ================== Featured Products ================== -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Take a Piece of the Garden Home</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="images/straw-jam.jpg" alt="Jar of strawberry jam">
+                        <h3>Homemade Strawberry Jam</h3>
+                        <p>Made with berries picked right here on the farm!</p>
+                        <a href="products.html#jam" class="button button-secondary">View in Shop</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/potted-flower.jpg" alt="Potted herbs">
+                        <h3>Potted Kitchen Herbs</h3>
+                        <p>Grow your own fresh flavor - Basil, Mint, Rosemary & more.</p>
+                        <a href="products.html#plants" class="button button-secondary">Available at Farm Stand</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/vegetables.avif" alt="Packets of vegetable seeds">
+                        <h3>Heirloom Seeds</h3>
+                        <p>Start your own garden with our tested varieties.</p>
+                        <a href="products.html#seeds" class="button button-secondary">View Selection</a>
+                    </div>
+                     <div class="product-card">
+                        <img src="images/honey.jpg" alt="Jar of local honey">
+                        <h3>Local Raw Honey</h3>
+                        <p>Pure honey from bees foraging on our farm blossoms.</p>
+                        <a href="products.html#honey" class="button button-secondary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                     <a href="products.html" class="button button-primary">Shop All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== Plan Your Visit Section ================== -->
+        <section class="plan-visit" id="visit-info">
+            <div class="container">
+                <h2>Plan Your Garden Trip Adventure</h2>
+                <div class="visit-grid">
+                    <div class="visit-info-item">
+                        <h3><i class="fas fa-clock"></i> Activity Hours</h3> <!-- Example using Font Awesome icon -->
+                        <p><strong>PYO Fields:</strong> Daily 9am - 4pm (Seasonal, check first!)</p>
+                        <p><strong>Guided Tours:</strong> Wed, Sat, Sun at 11am & 2pm (Booking needed)</p>
+                        <p><strong>Workshops:</strong> See specific workshop schedule.</p>
+                        <p><strong>Farm Stand & Cafe:</strong> Daily 9am - 5pm (May-Oct)</p>
+                    </div>
+                    <div class="visit-info-item" id="booking">
+                         <h3><i class="fas fa-calendar-alt"></i> Booking Information</h3>
+                         <p><strong>Tours & Workshops:</strong> Essential to book online or call us.</p>
+                         <p><strong>PYO:</strong> No booking needed, but check crop availability hotline/website before coming.</p>
+                         <p><strong>Groups:</strong> Please contact us for group bookings (10+ people).</p>
+                         <a href="#contact" class="button button-secondary scroll-to">Contact to Book</a>
+                    </div>
+                     <div class="visit-info-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location & Directions</h3>
+                        <p>GardenPro<br>Federal Capital Territory, Abuja. Nigeria.<br>[City, Postal Code]</p>
+                        <!-- Embed Google Map Here -->
+                        <div class="map-placeholder">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.760212345678!2d7.495082314334567!3d9.057850793489123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a5c12345678%3A0xabcdef1234567890!2sAbuja%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1610000000000!5m2!1sen!2sng" 
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <p>Ample free parking available on site.</p>
+                    </div>
+                    <div class="visit-info-item">
+                        <h3><i class="fas fa-shoe-prints"></i> What to Bring/Wear</h3>
+                         <ul>
+                            <li>Comfortable walking shoes (fields can be uneven).</li>
+                            <li>Weather-appropriate clothing (layers recommended).</li>
+                            <li>Sun hat, sunscreen, sunglasses.</li>
+                            <li>Water bottle.</li>
+                            <li>Reusable bags/baskets for PYO (or purchase here).</li>
+                            <li>Camera to capture memories!</li>
+                         </ul>
+                    </div>
+                     <div class="visit-info-item">
+                        <h3><i class="fas fa-info-circle"></i> Farm Rules & Tips</h3>
+                         <ul>
+                            <li>Please stay on marked paths.</li>
+                            <li>Supervise children closely, especially near equipment.</li>
+                            <li>Only pick in designated PYO areas.</li>
+                            <li>No pets allowed in PYO fields or Cafe (service animals welcome).</li>
+                            <li>Handle plants and produce gently.</li>
+                            <li>Pack out what you pack in.</li>
+                         </ul>
+                    </div>
+                     <div class="visit-info-item">
+                         <h3><i class="fas fa-wheelchair"></i> Accessibility</h3>
+                         <p>Main paths, Farm Stand, and Cafe are wheelchair accessible. Some PYO areas may have uneven terrain. Accessible restrooms available. Please call ahead with specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== Photo Gallery ================== -->
+        <section class="gallery">
+            <div class="container">
+                <h2>Moments from the Garden</h2>
+                <div class="gallery-grid">
+                    <!-- Add gallery images -->
+                    <img src="images/family.jpg" alt="Happy family picking pumpkins">
+                    <img src="images/garden-trip.jpg" alt="Close up of vibrant flowers">
+                    <img src="images/couple.jpg" alt="Couple enjoying coffee at the cafe">
+                    <img src="images/learning.jpg" alt="Workshop participants learning about composting">
+                    <img src="images/lush.jpg" alt="Lush vegetable rows in summer">
+                    <img src="images/child.jpg" alt="Child smelling a flower">
+                     <!-- Add more images -->
+                </div>
+                 <!-- Add gallery controls/lightbox functionality via JS if desired -->
+            </div>
+        </section>
+
+        <!-- ================== Testimonials ================== -->
+        <section class="testimonials">
+            <div class="container">
+                 <h2>What Our Visitors Say</h2>
+                 <div class="testimonial-grid">
+                    <blockquote>
+                        <p>"The strawberry picking was fantastic! So fresh and delicious, the kids had an absolute blast. We'll definitely be back next year."</p>
+                        <footer>- Sarah K., Abuja</footer>
+                    </blockquote>
+                     <blockquote>
+                        <p>"I learned so much at the container gardening workshop! The instructor was knowledgeable and friendly. Highly recommend."</p>
+                        <footer>- David M., Abuja</footer>
+                    </blockquote>
+                     <blockquote>
+                        <p>"A truly beautiful and relaxing place. The guided tour was informative, and the lunch at the cafe was perfect. A wonderful day out."</p>
+                        <footer>- Emily & Tom P., Lagos</footer>
+                    </blockquote>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ================== Final Call to Action ================== -->
+        <section class="final-cta" id="final-cta-section">
+            <div class="container text-center">
+                <h2>Ready to Create Your Own Garden Memories?</h2>
+                <p>Check availability and book your tours or workshops today, or simply come on down for Pick-Your-Own fun and delicious treats!</p>
+                <a href="#booking" class="button button-primary scroll-to">Book An Activity</a>
+                <a href="#visit-info" class="button button-secondary scroll-to">Get Visit Info</a>
+                <a href="contact.html" class="button button-secondary">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================== FOOTER (Assume consistent site footer) ================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <p>© <span id="year"></span> GardenPro. All Rights Reserved.</p>
+                    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+                </div>
+                 <div class="footer-col">
+                     <p>Federal Capital Territory, Abuja</p>
+                     <p>Phone: +2348147497466</p>
+                     <p>Email: aladedavid4@gmail.com</p>
+                 </div>
+                <div class="footer-col social-links">
+                    <a href="#" aria-label="Facebook">[FB Icon]</a>
+                    <a href="#" aria-label="Instagram">[Insta Icon]</a>
+                    <!-- Add other social links -->
+                </div>
+                 <div class="footer-col newsletter">
+                    <h4>Stay Updated</h4>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
