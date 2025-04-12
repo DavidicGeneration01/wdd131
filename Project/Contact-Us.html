@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David O. Alade">
     <meta name="description" content="Contact GardenPro for all your gardening needs.">
+    <meta name="Purpose" content="For more information and feedback" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png" />
+
     <title>Contact Us - GardenPro</title>
     <link rel="stylesheet" href="styles/Contact-Us.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="GardenPro Logo">
+            <img src="images/logo.png" alt="GardenPro Logo" />
+            <span class="span-text">GardenPro</span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+        <nav class="navbar">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="GardenPro.html">Project</a></li>
+                <li><a href="Contact-Us.html">Contact Me</a></li>
+                <li><a href="About-Me.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <img src="images/garden.jpg" alt="Beautiful Garden">
-        </section>
+    
 
         <section class="contact-form">
             <h1>Contact Us</h1>
             <form id="contactForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
+                <input type="text" id="name" name="name" placeholder="Please enter your name" required>
+        
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
+                <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+        
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
+                <textarea id="message" name="message" rows="5" placeholder="Please enter your message" required></textarea>
+        
                 <button type="submit">Submit</button>
             </form>
             <p id="successMessage" class="hidden">Thank you for contacting us!</p>

@@ -1,5 +1,136 @@
 /* Contact-Us.css */
 
+:root {
+    --background-color: #f4f4f4; /* Light background color */
+    --background-color: #f8f8f8; /* footer background color for sections */
+    --background-color: #e8e8e8; /* footer, copyright background color */
+    --background-color: #f4f4f4; /* card background color */
+    --text-color: #333; /* Dark text color */
+    --text-color: #fff; /* Light text color */
+    --primary-color: rgb(34, 139, 34); /* Green color for links and buttons */
+    --hover-color: rgb(0, 128, 0); /* Darker green for hover effects */
+  
+  }
+
+/* Header style */
+
+.header {
+background-color: var(--background-color-dark);
+color: var(--text-color-secondary);
+}
+
+/* General styles for header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: #f4f4f4;
+}
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo img {
+max-width: 40px;
+margin-right: 10px;
+}
+
+.span-text {
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.navbar {
+position: relative;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+}
+
+.nav-links a:hover {
+color: rgb(34, 139, 34);
+}
+
+.nav-links a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 2px;
+background-color: rgb(34, 139, 34);
+transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+width: 100%;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 25px;
+height: 20px;
+cursor: pointer;
+}
+
+.hamburger span {
+display: block;
+height: 3px;
+background-color: #333;
+border-radius: 2px;
+transition: all 0.3s ease;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+.hamburger {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150%;
+    right: -50px;
+    background-color: #f4f4f4;
+    width: 200px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease, padding 0.5s ease;
+}
+
+.nav-links.active {
+    transform: scaleY(1);
+    padding: 10px;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+}
+
+
+
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -32,23 +163,25 @@ a:hover {
     border: 1px solid #dcdcdc; /* Light gray border */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased spacing between elements */
 }
 
 .contact-form label {
-    display: block;
-    margin-bottom: 8px;
     font-weight: bold;
     color: #2a5d34; /* Garden green for labels */
+    font-size: 14px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: calc(100% - 20px); /* Ensure inputs stay within the form border */
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #dcdcdc; /* Light gray border */
     border-radius: 4px;
     font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
 .contact-form input:focus,
@@ -58,20 +191,44 @@ a:hover {
     box-shadow: 0 0 5px rgba(42, 93, 52, 0.5);
 }
 
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Set a minimum height for textareas */
+}
+
 .contact-form button {
     background-color: #2a5d34; /* Garden green button */
     color: #ffffff; /* White text */
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
     background-color: #1e3e24; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 10px 15px; /* Adjust button padding */
+    }
+}
 /* Footer Styles */
 .footer {
     text-align: center;
