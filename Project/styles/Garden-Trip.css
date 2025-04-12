@@ -277,8 +277,8 @@ header {
 /* ================== Hero Section ================== */
 .hero {
     position: relative;
-    height: 65vh; /* Adjust height as needed */
-    background: url('images/garden-hero-background.jpg') no-repeat center center/cover; /* Replace with your image */
+    height: 75vh; /* Adjust height as needed */
+    background: url('/wdd131/Project/images/compost-basics.jpg') no-repeat center center/cover; /* Replace with your image */
     display: flex;
     align-items: center;
     justify-content: center;
