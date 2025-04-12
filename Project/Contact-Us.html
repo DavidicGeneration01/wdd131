@@ -28,7 +28,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="GardenPro.html">Project</a></li>
-                <li><a href="Contact-Us.html">Contact Me</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
                 <li><a href="About-Me.html">About</a></li>
             </ul>
         </nav>
@@ -54,34 +54,103 @@
             <p id="successMessage" class="hidden">Thank you for contacting us!</p>
         </section>
 
-        <section class="contact-info">
-            <h2>Our Location</h2>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: info@gardenpro.com</p>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627974202144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d9f3e2f3e2f!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1614311234567!5m2!1sen!2sau" 
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="contact-information">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> (+234) 8147497466</p>
+            <p><strong>Email:</strong> <a href="mailto:dalade@byupathway.edu">dalade@byupathway.edu</a></p>
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468132!3d37.77492927975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0e6b1b1%3A0x4c8b8b8b8b8b8b8b!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1616161616161!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
             </div>
         </section>
     </main>
 
+    <div class="info">
+        <div class="logo-container">
+          <img src="images/logo.png" alt="GardenPro Logo" class="garden" />
+          <span class="text">GardenPro</span>
+        </div>
+        <section class="newsletter-section">
+          <h2>Subscribe to our newsletter</h2>
+          <div class="subscription-form">
+            <input type="email" placeholder="Input your email" class="email-input" />
+            <button class="subscribe-button">Subscribe</button>
+          </div>
+        </section>
+      </div>
+
     <footer>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">User guides</a></li>
+                    <li><a href="#">Webinars</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Plans & Pricing</h3>
+                <ul>
+                    <li><a href="#">Personnel</a></li>
+                    <li><a href="#">Startup</a></li>
+                    <li><a href="#">Organization</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-        </div>
-        <div class="language-selector">
-            <label for="language">Language:</label>
-            <select id="language">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
-            </select>
+        <div class="footer-bottom">
+            <div class="language-selection">
+                <select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="italian">Italian</option>
+                    <option value="portuguese">Portuguese</option>
+                    <option value="french">French</option>
+                </select>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://twitter.com/SonofGod447437/">
+                    <img src="images/twitter-icon.png" alt="Twitter Icon" />
+                </a>
+                <a href="https://www.instagram.com/davidicgrace1/">
+                    <img src="images/instagram-icon.png" alt="Instagram Icon" />
+                </a>
+                <a href="https://linkedin.com/in/davidalade01/">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn Icon" />
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentyear"></span> 🌺 David O. Alade 🌺 Nigeria</p>
+                <div class="id">
+                    <p id="lastmodified"></p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
