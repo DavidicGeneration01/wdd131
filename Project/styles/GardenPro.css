@@ -20,6 +20,7 @@
   body {
     background-color: var(--background-color-light);
     color: var(--text-color-primary);
+    font-family: Raleway, sans-serif;
   }
   
   .header {
@@ -34,6 +35,7 @@
     align-items: center;
     padding: 10px 20px;
     background-color: #f4f4f4;
+    font-family: Raleway, sans-serif;
   }
   
   .logo {
