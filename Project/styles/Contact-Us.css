@@ -390,7 +390,7 @@ a:hover {
   .subscribe-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4caf50; /* Example button color */
+    background-color: #008000; /* Example button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -468,7 +468,7 @@ font-size: x-large;
 }
 
 footer .id {
-color: rgb(255, 0, 0);
+color: #006400;
 }
 
 /* Mobile view styles for footer */
