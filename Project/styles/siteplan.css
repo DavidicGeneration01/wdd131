@@ -82,7 +82,7 @@ Fonts are separated by a | */
 }
 
 .img5, .img6, .img7, .img8 {
-  height: 200px;
+  height: 150px;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
@@ -248,4 +248,15 @@ nav a:hover::after {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.para {
+  font-weight: bold;
+}
+
+.wiref-sec img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #f4f4f4;
+  border-radius: 10px;
 }
