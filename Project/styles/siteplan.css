@@ -255,6 +255,7 @@ nav a:hover::after {
 }
 
 .wiref-sec img {
+  margin-top: 80px;
   max-width: 100%;
   height: auto;
   border: 2px solid #f4f4f4;
